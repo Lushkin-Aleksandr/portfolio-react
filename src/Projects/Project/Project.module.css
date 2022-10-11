@@ -1,0 +1,22 @@
+.project {
+    width: 250px;
+    background-color: #f7f7f7;
+}
+
+.projectImg {
+    width: 250px;
+    height: 250px;
+}
+
+.info {
+    background-color: #a9a9a9;
+
+}
+
+.title {
+    margin: 0;
+}
+
+.description {
+    margin: 0;
+}
