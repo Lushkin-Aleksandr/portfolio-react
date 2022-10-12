@@ -3,6 +3,6 @@
     background-color: cornflowerblue;
 }
 
-.headerContainer {
+.header .headerContainer {
     justify-content: flex-end;
 }
