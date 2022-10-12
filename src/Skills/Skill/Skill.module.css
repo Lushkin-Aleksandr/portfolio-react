@@ -6,12 +6,19 @@
     align-items: center;
 }
 
-.icon {
+.iconContainer {
     width: 60px;
     height: 60px;
-    background-color: #eeeef5;
+    background-color: #bdbdbd;
+    margin-bottom: 20px;
+}
+
+.title {
+    background-color: #bdbdbd;
+    margin-bottom: 20px;
 }
 
 .description {
+    background-color: #bdbdbd;
     text-align: center;
 }

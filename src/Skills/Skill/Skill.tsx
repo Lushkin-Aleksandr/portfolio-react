@@ -9,9 +9,9 @@ type PropsType = {
 const Skill:React.FC<PropsType> = (props) => {
   return (
     <div className={styles.skill}>
-      <div className={styles.icon}></div>
+      <div className={styles.iconContainer}></div>
       <h3 className={styles.title}>{props.title}</h3>
-      <span className={styles.description}>{props.description}</span>
+      <p className={styles.description}>{props.description}</p>
     </div>
   );
 };

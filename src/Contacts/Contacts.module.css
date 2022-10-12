@@ -1,6 +1,10 @@
 .contactsBlock {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #FFE2E2;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contactsContainer {
@@ -9,13 +13,31 @@
 }
 
 .title {
-
+    background-color: #f7f7f7;
+    margin-bottom: 50px;
 }
 
 .form {
+    max-width: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /*align-items: center;*/
     gap: 10px;
+    border: 1px solid;
+    margin-bottom: 50px;
+}
+
+.input {
+    padding: 5px 10px;
+}
+
+.textarea {
+    padding: 5px 10px;
+    min-height: 100px;
+}
+
+.button {
+    padding: 5px 15px;
 }
 

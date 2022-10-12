@@ -1,9 +1,22 @@
 .remoteWorkBlock {
     background-color: #FFFEEC;
-    height: 150px;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
 }
 
 .remoteWorkContainer {
     flex-direction: column;
     justify-content: flex-start;
+}
+
+.title {
+    background-color: #b3b3b3;
+    margin-bottom: 50px;
+}
+
+.button {
+    padding: 5px 10px;
 }

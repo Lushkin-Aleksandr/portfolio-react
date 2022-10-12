@@ -1,6 +1,14 @@
 .mainBlock {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #ffd4f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    padding: 0 20px;
+    row-gap: 20px;
 }
 
 .text {
