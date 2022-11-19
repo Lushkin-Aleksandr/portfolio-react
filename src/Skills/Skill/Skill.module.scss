@@ -1,0 +1,30 @@
+@import "../../common/styles/sass/variables";
+
+.skill {
+    padding-top: 30px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .iconContainer {
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255,255,255,0.1);
+        margin-bottom: 30px;
+        transform: rotate(45deg);
+    }
+
+    .title {
+        margin-bottom: 15px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .description {
+        width: 100%;
+        text-align: center;
+    }
+}
+

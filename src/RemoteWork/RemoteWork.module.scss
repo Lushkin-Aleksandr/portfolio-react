@@ -1,0 +1,25 @@
+@import "../common/styles/sass/variables";
+
+.remoteWorkBlock {
+  background-color: $bgSecondColor;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+
+  .remoteWorkContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .title {
+      margin-bottom: 50px;
+    }
+
+    .button {
+      margin-top: 30px;
+    }
+  }
+
+}
+

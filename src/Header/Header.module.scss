@@ -1,0 +1,25 @@
+@import "../common/styles/sass/variables";
+
+.header {
+  height: 80px;
+  background-color: #262626;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid black;
+  transition: ease .2s;
+
+  .headerContainer {
+    justify-content: flex-end;
+    border: none;
+
+    @media (max-width: 990px) {
+      justify-content: center;
+    }
+  }
+}
+
+.header.hide {
+  top: -80px
+}
+

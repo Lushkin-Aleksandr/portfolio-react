@@ -1,0 +1,68 @@
+@import "../common/styles/sass/variables";
+
+.mainBlock {
+    min-height: 100vh;
+    background-color: $bgColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .mainContainer {
+        padding: 0 20px;
+        row-gap: 20px;
+        flex-wrap: nowrap;
+        
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .text {
+
+            span {
+
+            }
+
+            h1 {
+
+            }
+        }
+
+        .photoWrapper {
+            position: relative;
+
+            .photo {
+                position: relative;
+                width: 300px;
+                height: 400px;
+                background-color: #000;
+                z-index: 1;
+
+                @media (max-width: 768px) {
+                    width: 240px;
+                    height: 320px;
+                }
+            }
+
+            .photoBorder {
+                position: absolute;
+                border: 5px solid $primaryColor;
+                width: 310px;
+                height: 420px;
+                top: 0;
+                left: 20px;
+
+                @media (max-width: 768px) {
+                    width: 240px;
+                    height: 330px;
+                }
+            }
+
+
+
+
+
+        }
+    }
+}
+
+

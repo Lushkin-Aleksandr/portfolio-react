@@ -1,8 +1,0 @@
-.header {
-    height: 80px;
-    background-color: cornflowerblue;
-}
-
-.header .headerContainer {
-    justify-content: flex-end;
-}
