@@ -8,68 +8,68 @@
   justify-content: center;
   align-items: center;
 
-  .contactsContainer {
-    flex-direction: column;
-    justify-content: flex-start;
+  .fade {
+    width: 100%;
 
-    @media (max-width: 640px) {
-      width: 100%
-    }
-
-    .form {
-      margin-top: 30px;
-      max-width: 540px;
-      width: 100%;
-      display: flex;
+    .contactsContainer {
       flex-direction: column;
-      gap: 15px;
-      margin-bottom: 50px;
-      padding: 0 20px;
-      
-      @media (max-width: 1196px) {
-        max-width: 450px;
+      justify-content: flex-start;
+
+      .form {
+        margin-top: 30px;
+        max-width: 540px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 50px;
+
+        @media (max-width: 1196px) {
+          max-width: 450px;
+        }
+
+        @media (max-width: 990px) {
+          max-width: 330px;
+        }
+
+        @media (max-width: 768px) {
+          max-width: 510px;
+        }
+
+        .input,
+        .textarea {
+          border: 1px solid #4a4a4a;
+          background-color: $bgSecondColor;
+          color: #495057;
+          font-weight: 400;
+          line-height: 1.5;
+
+          outline: none;
+        }
+
+        .input::placeholder,
+        .textarea::placeholder {
+          font-family: 'Poppins', sans-serif;
+          font-size: 12px;
+          color: #6c757d;
+          opacity: 1;
+        }
+
+        .input {
+          padding: 5px 15px;
+        }
+
+        .textarea {
+          min-height: 100px;
+          padding: 15px;
+        }
       }
 
-      @media (max-width: 990px) {
-        max-width: 330px;
-      }
 
-      @media (max-width: 768px) {
-        max-width: 510px;
-      }
-
-      .input,
-      .textarea {
-        border: 1px solid #4a4a4a;
-        background-color: $bgSecondColor;
-        color: #495057;
-        font-weight: 400;
-        line-height: 1.5;
-
-        outline: none;
-      }
-
-      .input::placeholder,
-      .textarea::placeholder {
-        font-family: 'Poppins', sans-serif;
-        font-size: 12px;
-        color: #6c757d;
-        opacity: 1;
-      }
-
-      .input {
-        padding: 5px 15px;
-      }
-
-      .textarea {
-        min-height: 100px;
-        padding: 15px;
-      }
     }
-
-
-
   }
+
+
 
 
 }

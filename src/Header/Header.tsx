@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Header.module.scss'
-import stylesContainer from '../common/styles/Container.module.css'
+import stylesContainer from '../common/styles/Container.module.scss'
 import Nav from "../Nav/Nav";
 import {useScrollDirection} from "../utils/useScrollDirection";
 

@@ -1,15 +1,22 @@
 import React from 'react';
 import styles from './Nav.module.css'
+import {Link, LinkProps} from "react-scroll";
 
 const Nav = () => {
-  return (
-    <div className={styles.nav}>
-      <a href="#main">Main</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contacts">Contacts</a>
-    </div>
-  );
+
+    const linkOptions: LinkProps | object = {
+        smooth: true,
+        duration: 300
+    }
+
+    return (
+        <div className={styles.nav}>
+            <Link to="main" {...linkOptions}>Main</Link>
+            <Link to="skills" {...linkOptions}>Skills</Link>
+            <Link to="projects" {...linkOptions}>Projects</Link>
+            <Link to="contacts" {...linkOptions}>Contacts</Link>
+        </div>
+    );
 };
 
 export default Nav;
