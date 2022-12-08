@@ -1,15 +1,15 @@
-import React, {ButtonHTMLAttributes} from 'react';
+import React, {AnchorHTMLAttributes} from 'react';
 import s from './Button.module.scss'
 
 
-type PropsType = ButtonHTMLAttributes<HTMLButtonElement> & {
+type PropsType = AnchorHTMLAttributes<HTMLAnchorElement> & {
 
 }
 
 const Button: React.FC<PropsType> = ({className, children, ...props}) => {
 
     return (
-        <button className={`${s.Button} ${className}`} {...props}>{children}</button>
+        <a className={`${s.Button} ${className}`} {...props}>{children}</a>
     );
 };
 

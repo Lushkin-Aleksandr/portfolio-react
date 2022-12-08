@@ -1,5 +1,6 @@
 import React, {CSSProperties} from 'react';
 import styles from './Project.module.scss'
+import Button from "../../common/components/Button/Button";
 
 
 type PropsType = {
@@ -11,8 +12,9 @@ type PropsType = {
 const Project: React.FC<PropsType> = (props) => {
     return (
         <div className={styles.project}>
-            <div style={props.style} className={styles.imgContainer}>
-                <a className={styles.link} href="#">View more</a>
+            <div className={styles.imgContainer}>
+                <div style={props.style}  className={styles.img}></div>
+                <Button className={styles.button}>View</Button>
             </div>
 
             <div className={styles.info}>

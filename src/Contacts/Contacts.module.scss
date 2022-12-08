@@ -1,4 +1,5 @@
 @import "../common/styles/sass/variables";
+@import "../common/components/Button/Button.module";
 
 .contactsBlock {
   min-height: 100vh;
@@ -43,7 +44,6 @@
           color: #495057;
           font-weight: 400;
           line-height: 1.5;
-
           outline: none;
         }
 
@@ -62,6 +62,11 @@
         .textarea {
           min-height: 100px;
           padding: 15px;
+        }
+
+        .submitButton {
+          @extend .Button;
+          align-self: center;
         }
       }
 
