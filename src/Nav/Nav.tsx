@@ -1,12 +1,18 @@
 import React from 'react';
-import styles from './Nav.module.css'
+import styles from './Nav.module.scss'
 import {Link, LinkProps} from "react-scroll";
 
-const Nav = () => {
+type PropsType = {
+
+}
+
+const Nav: React.FC<PropsType> = (props) => {
 
     const linkOptions: LinkProps | object = {
         smooth: true,
-        duration: 300
+        duration: 300,
+        spy: true,
+        activeClass: styles.active,
     }
 
     return (
