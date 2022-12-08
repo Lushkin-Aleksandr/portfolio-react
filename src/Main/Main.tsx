@@ -4,6 +4,7 @@ import stylesContainer from '../common/styles/Container.module.scss'
 import {BackgroundParticle} from "./BackgroundParticle/BackgroundParticle";
 import ReactTypingEffect from "react-typing-effect";
 import Tilt from 'react-parallax-tilt'
+// import mainPhoto from '../assets/images/mainPhoto.jpg'
 
 const Main = () => {
 
@@ -21,7 +22,7 @@ const Main = () => {
                 </div>
                 <Tilt reset={false} style={{zIndex: '1'}}>
                     <div className={styles.photoWrapper}>
-                        <div className={styles.photo}></div>
+                        <img src={'mainPhoto'} alt={'main photo'} className={styles.photo}/>
                     </div>
                 </Tilt>
                 <BackgroundParticle/>

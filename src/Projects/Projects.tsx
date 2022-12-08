@@ -16,7 +16,7 @@ const Projects = () => {
 
     return (
         <div id={'projects'} className={styles.projectsBlock}>
-            <Fade triggerOnce={true} duration={1000}>
+            <Fade className={styles.fade} triggerOnce={true} duration={1000}>
                 <div className={`${stylesContainer.container} ${styles.projectsContainer}`}>
                     <Title text={'Projects'}/>
                     <div className={styles.projects}>

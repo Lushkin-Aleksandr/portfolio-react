@@ -1,69 +1,74 @@
 @import "../common/styles/sass/variables";
 
 .mainBlock {
-    min-height: 100vh;
-    background-color: $bgColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  min-height: 100vh;
+  background-color: $bgColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
-    .mainContainer {
-        //padding: 0 20px;
-        row-gap: 20px;
-        flex-wrap: nowrap;
-        
-        @media (max-width: 768px) {
-            flex-direction: column;
-        }
+  .mainContainer {
+    //padding: 0 20px;
+    row-gap: 20px;
+    flex-wrap: nowrap;
 
-        .text {
-
-            span {
-                font-size: 16px;
-            }
-
-            h1 {
-                font-size: 50px;
-
-                @media (max-width: 768px) {
-                    font-size: 40px;
-                }
-            }
-
-            .typingText {
-                font-size: 27px;
-            }
-        }
-
-        .photoWrapper {
-            margin-right: 30px;
-            position: relative;
-            z-index: 1;
-
-            .photo {
-                width: 300px;
-                height: 400px;
-                background-color: #000;
-
-                @media (max-width: 990px) {
-                    width: 240px;
-                    height: 320px;
-                }
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    border: 5px solid $primaryColor;
-                    width: 101%;
-                    height: 105%;
-                    top: 0;
-                    left: 20px;
-                    z-index: -1;
-                }
-            }
-        }
+    @media (max-width: 768px) {
+      flex-direction: column;
     }
+
+    .text {
+
+      span {
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 50px;
+
+        @media (max-width: 768px) {
+          font-size: 40px;
+        }
+      }
+
+      .typingText {
+        font-size: 27px;
+      }
+    }
+
+    .photoWrapper {
+      margin-right: 30px;
+      position: relative;
+      z-index: 1;
+
+      .photo {
+        display: inline-block;
+        width: 300px;
+        height: 400px;
+        background-color: #000;
+        object-fit: cover;
+        border-radius: 5px;
+
+        @media (max-width: 990px) {
+          width: 240px;
+          height: 320px;
+        }
+
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        border: 5px solid $primaryColor;
+        width: 101%;
+        height: 105%;
+        top: 0;
+        left: 20px;
+        z-index: -1;
+        border-radius: 5px;
+      }
+    }
+  }
 }
 
 
