@@ -39,9 +39,11 @@
 
         .input,
         .textarea {
+          font-family: 'Poppins', sans-serif;
+          font-size: 12px;
           border: 1px solid #4a4a4a;
           background-color: $bgSecondColor;
-          color: #495057;
+          color: #cbd2d9;
           font-weight: 400;
           line-height: 1.5;
           outline: none;
@@ -49,8 +51,6 @@
 
         .input::placeholder,
         .textarea::placeholder {
-          font-family: 'Poppins', sans-serif;
-          font-size: 12px;
           color: #6c757d;
           opacity: 1;
         }
@@ -62,6 +62,10 @@
         .textarea {
           min-height: 100px;
           padding: 15px;
+        }
+
+        .error {
+          color: red;
         }
 
         .submitButton {
